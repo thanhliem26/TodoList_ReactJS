@@ -1,0 +1,125 @@
+.FormTodo {
+    background-color: white;
+    width: 40%;
+    margin: 50px auto;
+    /* min-height: 300px; */
+    border-radius: 5px;
+}
+
+.FormTodo h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 36px;
+    color: #4e4b4b;
+}
+
+.FormInput {
+    padding: 0 40px;
+    width: 100%;
+}
+
+.FormInput input {
+    padding: 5px 10px;
+    border: 1px solid #f4f2f2;
+    box-shadow: 0 0px 1px 1px rgb(148 142 142 / 50%);
+    height: 34px;
+    width: 100%;
+    
+}
+
+.FormInput input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+.Form__list {
+    padding: 10px 40px 0;
+    width: 100%;
+}
+
+.Form__list ul{
+    list-style-type: none;
+}
+
+.Form__list ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #d2d0d0;
+}
+
+.Form__list ul li span {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.List__empty {
+    background-color: #F2F2F2;
+    border-bottom: 0px !important;
+    border: 1px solid rgba(299, 299, 299, 0.5);
+    padding: 10px 20px !important;
+    margin: 10px 0;
+    color: #555;
+    
+}
+
+.Form__navbar {
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4FCE8;
+    height: 40px;
+    align-items: center;
+}
+
+.Form__navbar .navbar__left {
+    display: flex;
+}
+
+.Form__navbar .navbar__left .navbar__left-icon {
+    border-right: 2px solid #c4bebe;
+    color: grey;
+}
+
+.Form__navbar .navbar__left .navbar__left-icon i {
+    padding: 0 10px;
+}
+
+.Form__navbar .navbar__left .navbar__left-icon i.active {
+    color: black;
+}
+
+.Form__navbar  .navbar__left .navbar__right-total {
+    padding-left: 10px;
+    color: #706f6f;
+}
+
+.Form__navbar .navbar__right button {
+    margin: 0 10px;
+    padding: 3px 10px;
+    color: #666;
+    background-color: transparent;
+    border: none;
+}
+
+.Form__navbar .navbar__right .active {
+    border: 1px solid gainsboro;
+}
+
+.Form__navbar .navbar__right button:last-child {
+    margin: 0;
+}
+
+.Form__navbar .navbar__right button:hover {
+    border: 1px solid gainsboro;
+    color: #555;
+}
+
+.text__status {
+    color: #999;
+    background-color: #eee;
+    text-align: center;
+    padding: 15px 0;
+}
