@@ -1,4 +1,6 @@
 import { SET_TODO_INPUT, ADD_TODO_INPUT, SET_COMPLETE_INPUT, SET_STATUS_INPUT} from "./constants";
+// const storeState = JSON.parse(localStorage.getItem('stateTodolist'));
+
 const initState = {
     todoInput: '',
     todos: [
@@ -24,7 +26,7 @@ function reducer(state, action) {
                 todoInput: action.payload
             }
         case ADD_TODO_INPUT:
-            return {
+            const newState = {
                 ...state,
                 todos: [...state.todos, {
                     index: state.todos.length,
@@ -32,6 +34,11 @@ function reducer(state, action) {
                     isComplete: false
                 }]
             }
+            const jsonJobs = JSON.stringify(newState);
+            localStorage.setItem('stateTodolist', jsonJobs);
+            console.log(jsonJobs);
+           
+            return newState;
         case SET_COMPLETE_INPUT:
             const check = [...state.todos];
             check[action.index] = {

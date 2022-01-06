@@ -43,7 +43,7 @@ const ListToDo = ({status}) => {
                     listReview.map((item) => {
                         return (
                             <li key={item.index}>
-                                <input type="checkbox"  onChange={handleChange(item.index)} defaultChecked={item.isComplete}></input>
+                                <input type="checkbox" className={`${item.isComplete === true ? 'complete' : ""}`}  onChange={handleChange(item.index)} defaultChecked={item.isComplete}></input>
                                 <span>{item.todo}</span>
                             </li>
                         )

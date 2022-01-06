@@ -17,9 +17,9 @@ const FormTodo = () => {
         const handleKey = (e) => {
             if(statusInput === "") {
                 if(e.keyCode === 191) {
-                    dispatch(actions.setStatusInput("add"))
-                } else if(e.keyCode === 78) {
                     dispatch(actions.setStatusInput("search"))
+                } else if(e.keyCode === 78) {
+                    dispatch(actions.setStatusInput("add"))
                 }
             } else {
                if(e.keyCode === 27) {
